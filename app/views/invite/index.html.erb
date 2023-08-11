@@ -1,0 +1,15 @@
+<div class="h-full flex flex-col justify-center">
+  <div class="w-11/12 md:w-auto mx-auto text-center flex flex-col gap-6 bg-[#f3eed9] justify-center px-8 py-12 text-[#6a040f] font-semibold border-opacity-5">
+    <% flash.each do |type, msg| %>
+      <div class="underline decoration-red-500">
+        <%= msg %>
+      </div>
+    <% end %>
+    <h1 class="text-2xl">Please enter the code provided on your invite.</h1>
+
+    <%= form_with url: '/rsvp', method: :get do |form| %>
+      <%= form.text_field :invite_code, placeholder: "Invite Code", class: "w-1/2 mb-3 md:mb-0 md:w-1/3 mx-6 border-4 border-opacity-10 p-2 border-[#6a040f] text-center"%>
+      <%= form.submit "Let's Go!", class: "bg-[#6a040f] text-[#f3eed9] p-3" %>
+    <% end %>
+  </div>
+</div>

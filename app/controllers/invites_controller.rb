@@ -65,6 +65,6 @@ class InvitesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def invite_params
-      params.require(:invite).permit(:code, :rsvped, :additions)
+      params.require(:invite).permit(:code, :rsvped)
     end
 end

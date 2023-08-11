@@ -1,0 +1,15 @@
+<div class="h-full flex flex-col justify-center">
+  <div class="w-11/12 md:w-auto mx-auto text-center flex flex-col items-center gap-6 bg-[#f3eed9] px-8 py-12 rounded-lg text-[#6a040f] font-semibold border-opacity-5">
+    <h1 class="text-2xl">Select everyone who will be attending.</h1>
+    <div class="rsvp-container w-fit text-lef flex flex-col gap-4">
+      <%= render partial: "rsvp", collection: @invite.rsvps %>
+    </div>
+    <%= form_with(url: '/rsvp', id: :bulk_actions_form, method: :patch) do |form| %>
+      <%= hidden_field(:invite, :id) %>
+      <div class="flex flex-col gap-4">
+        <%= form.submit "Submit", class: "cursor-pointer bg-[#6a040f] text-[#f3eed9] p-3 rounded-lg" %>
+        <%= form.submit "No one will be attending", class: "text-blue-400 z-20 underline underline-offset-4 cursor-pointer" %>
+      </div>
+    <% end %>
+  </div>
+</div>

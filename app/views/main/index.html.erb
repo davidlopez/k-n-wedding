@@ -1,43 +1,27 @@
-The ceremony will take place in the Worship Center of the Church at 3PM.
+<section id="intro" class="bg-[#6a040f] py-24 md:py-44 mx-auto font-mono">
+  <div class="flex flex-col gap-10 text-center text-[#f3eed9] font-extrabold italic">
+    <h4 class="text-4xl md:text-6xl text stroke-2 stroke-neutral-50 italic">let`s celebrate</h4>
+    <div class="mx-auto">
+      <%= render partial: 'svg/knlogo' %>
+    </div>
+    <h5 class="text-2xl md:text-6xl">on sunday october 22nd</h5>
+  </div>
+</section>
 
-There will be a dessert reception immediately following the ceremony. This will take place at the same location as the ceremony in the lobby. There will be soft drinks, water, coffee, and other non-alcoholic beverages to enjoy.
+<section id="venue" class="py-16 md:py-28">
+  <%= render "shared/venue" %>
+</section>
 
-The event will end at 6:30PM. We look forward to seeing you there and celebrating with you!
+<section id="info" class="pt-6 pb-16 md:py-0 md:pb-28 max-w-[100rem] mx-auto">
+  <div class="hidden lg:block w-2/5 h-0.5 bg-[#ff776d] mx-auto"></div>
+  <%= render "shared/info" %>
+  <div class="hidden lg:block w-2/5 h-0.5 bg-[#ff776d] mx-auto"></div>
+</section>
 
+<section id="party" class="py-16 md:py-28">
+  <%= render "shared/party" %>
+</section>
 
-Wedding Party Names:
-
-Bride’s side:
-David Lopez - Man of Honor
-Eli Johnson - Bridesman
-
-Groom’s side:
-Steven Sommer - Best Man
-Tanner Luedtke - Groomsman
-J.T Johnson - Groomsman
-
-Hotels:
-
-Courtyard by Marriott Denver Southwest/Littleton
-3056 W County Line Rd, Littleton, CO 80129 • (303) 791-3001
-~5.9 miles from the church~
-
-Residence Inn by Marriott Denver Southwest/Littleton
-3090 W County Line Rd, Littleton, CO 80129 • (303) 791-3010
-~5.9 miles from the church~
-
-Hampton Inn & Suites Denver/Highlands Ranch
-3095 W County Line Rd, Highlands Ranch, CO 80129 • (303) 794-1800
-~5.9 miles from the church~
-
-Staybridge Suites Denver South - Highlands Ranch, an IHG Hotel
-8211 Southpark Cir, Littleton, CO 80120 • (303) 347-9901
-~5.9 miles from the church~
-
-Fairfield Inn & Suites by Marriott Denver Tech Center/South
-7056 E County Line Rd, Highlands Ranch, CO 80126 • (303) 290-6700
-~1.2 miles from the church~
-
-Comfort Suites Highlands Ranch Denver Tech Center Area
-7060 E County Line Rd, Highlands Ranch, CO 80126 • (303) 770-5400
-~1.2 miles from the church~
+<section id="travel" class="pt-6 pb-16 md:py-28 max-w-[100rem] mx-auto">
+  <%= render "shared/travel" %>
+</section>
